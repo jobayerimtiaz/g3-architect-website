@@ -1,3 +1,123 @@
-h1 {
-    color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-fonts {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared styles */
+
+.dark-1 {
+    color: rgb(19, 19, 19);
+    font-weight: 700;
+}
+
+.dark-2 {
+    color: rgb(66, 66, 66);
+    font-weight: 500;
+}
+
+.dark-3 {
+    color: rgb(114, 114, 114);
+    font-weight: 400;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+}
+
+.display-flex {
+    display: flex;
+}
+
+/* header styles */
+
+.bg-header {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-right: 240px;
+
+}
+
+.nav-link li a {
+    text-decoration: none;
+}
+
+.navbar h3 {
+    margin-left: 228px;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+/* banner text styles */
+
+.banner-text {
+    max-width: 862px;
+    margin: 150px 289px 50px 289px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-text h1 {
+
+    font-size: 4rem;
+    text-align: center;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+.header-img-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.header-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 576px) {
+
+    .bg-header,
+    .navbar,
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .heading-holder h3 {
+        margin: 0 auto;
+    }
+
 }
